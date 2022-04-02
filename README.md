@@ -1,2 +1,2 @@
 
-<img src="TechNews.png" alt="">
+<img src="images/TechNews.png" alt="">
