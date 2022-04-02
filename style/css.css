@@ -1,0 +1,384 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+body{
+    font-family: "Oswald", sans-serif;
+    background-color: #000;
+    /* Patrones para Css: https://www.heropatterns.com/ */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.1'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color: #1e272e;
+    color: #fff;
+    font-size: 16px;
+}
+
+.Botones{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #262626;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size:15px;
+    margin: 10px 0 ;
+}
+
+
+
+
+
+/*--------------------------------------*/
+
+.Contenedor-Principal{
+    width: 90%;
+    margin: auto;
+}
+
+/*------------------ NAVEGACION --------------------*/
+
+.LogoPrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(8, 89, 239);
+    padding: 10px;
+    font-size: 31px;
+    text-shadow: 1px 1px 30px rgba(255, 255, 255, 0.39);
+    transition: 1.1s;
+}
+
+.LogoPrincipal:hover{
+    transform: scale(.8);
+}
+
+.textblanco{
+    color: #fff;
+    padding: 0 3px;
+}
+
+
+
+
+.BarraNav{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17PX;
+    height: 50px;
+    padding: 10px;
+}
+
+
+.BarraNav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.BarraNav li{
+    padding: 10px;
+}
+
+.BarraNav a{
+    padding: 5px;
+}
+
+.BarraNav li a:hover{
+    border-bottom: 3px solid #fff; /* LINEA DEBAJO DEL TEXTO A LA HORA DE TOCARLO*/
+}
+
+
+.ImgLogo{
+    border-radius: 50%;
+    width: 65px;
+    height: 45px;
+}
+
+
+/*------------------ SECCCION 1  --------------------*/
+
+.BackImage{
+    height: 500px;
+    background-image: url("../images/showcase2.jpg");
+    margin-top: 1%;
+    padding-bottom: 30px;
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    background-position: center;
+    flex-direction:column;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+
+
+
+/*------------------ SECCCION 2 --------------------*/
+
+
+/*ACA EN ESTE APARTADO SE COLOCO -- GRID -- */
+
+.ContenedorCartas{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr 1fr;
+    gap: 25px; /* Espaciado Interno */
+}
+
+.ContenedorCartas img{
+    width: 100%;
+    height: 180px;
+    border: 2px solid rgba(255, 255, 255, 0.614);
+    box-shadow: 1px 10px 10px #000;
+    transition: 1.1s;
+}
+
+
+.ContenedorCartas img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+.ContenedorCartas h3{
+    font-weight: bold;
+    color: #f2f2f2;
+    display: inline-block;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.ContenedorCartas p{
+    text-align: justify;
+}
+
+
+
+/*------------------ SECCCION 3  --------------------*/
+
+.BackImage2{
+    margin-top: 45px;
+    margin-bottom: 45px;
+    background-image: url("../images/backgred.jpg");
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: 1.1s;
+
+}
+
+.Contenedor-BackImage2 {
+    padding: 2px 30px;
+    width: 50%;
+    text-align: justify;
+}
+
+.Contenedor-BackImage2 p{
+    margin: 10px 0;
+}
+
+
+/*------------------ SECCCION 4 --------------------*/
+
+
+/*ACA EN ESTE APARTADO SE COLOCO -- GRID -- */
+
+.ContenedorCartas2{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr 1fr;
+    gap: 25px; /* Espaciado Interno */
+    transition: 1.1s;
+}
+
+.ContenedorCartas2 img{
+    width: 100%;
+    height: 180px;
+    border: 2px solid rgba(255, 255, 255, 0.614);
+    box-shadow: 1px 10px 10px #000;
+    transition: 1.1s;
+}
+
+.ContenedorCartas2 img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+
+
+.ContenedorCartas2 h3{
+    font-weight: bold;
+    color: #f2f2f2;
+    display: inline-block;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.ContenedorCartas2 p{
+    text-align: justify;
+}
+
+
+
+/*------------------ SECCCION 5 --------------------*/
+
+.BackImage3{
+    margin-top: 45px;
+    margin-bottom: 45px;
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/backBlue.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+
+}
+
+.Contenedor-BackImage3{
+    padding: 30px;
+    margin: 0 10px;
+    width: 50%;
+}
+
+.Contenedor-BackImage3 p{
+    text-align: justify;
+    margin: 10px 0;
+}
+
+
+
+/*------------------ SECCCION 6 (LINKS) --------------------*/
+
+.Links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+}
+
+.Links p{
+    font-size: 30px;
+    padding:10px 0 ;
+}
+
+.iconos a i{
+    margin: 0 15px;
+    font-size: 45px;
+}
+
+
+/*------------------  MEDIA QUERIS --------------------*/
+
+
+@media (max-width:700px){
+
+
+    .BarraNav ul li{
+        padding: 20px;
+        font-size: 13px;
+    }
+
+
+    .botonburger {
+        position: absolute;
+        cursor: pointer;
+        top: 9px;
+        right: 24px;
+        font-size: 23px;
+        display: none;
+    }
+
+/*-------------------------------*/
+
+    .LogoPrincipal {
+        font-size: 24px;
+    }
+
+    .ImgLogo{
+        border-radius: 50%;
+        width: 30px;
+        height: 25px;
+    }
+    
+    .BarraNav{
+        font-size: 13px;
+        padding: 1px;
+    }
+    .BarraNav li {
+        padding: 5px;
+    }
+/*-------------------------------*/
+
+    .ContenedorCartas{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Contenedor-BackImage2 {
+        width: 77%;
+    }
+/*-------------------------------*/
+
+    .ContenedorCartas2{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Contenedor-BackImage3 {
+        text-align: justify;
+        width: 77%;
+    }
+
+}
+
+@media (max-width:500px){
+
+    .BarraNav{
+        display: none;
+    }
+    .ContenedorCartas{
+        grid-template-columns: 1fr;
+    }
+    .ContenedorCartas img{
+        width: 91%;
+        margin: 15px;
+    }
+
+
+    .ContenedorCartas2{
+        grid-template-columns: 1fr;
+    }
+    .ContenedorCartas img {
+        width: 91%;
+        margin: 15px;
+    }
+
+
+    .Contenedor-BackImage3 {
+        text-align: justify;
+        width: 77%;
+    }
+
+
+}
