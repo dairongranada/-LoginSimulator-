@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/css.css">
+  <title>Registro</title>
+
+      <!-- Tipo De Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    
+</head>
+<body class="bodyFomularios">
+  <div>
+    <nav class="BarraNav">
+        <a class="LogoPrincipal" href="#"><img class="ImgLogo" src="images/logo.jpg" alt=""> <h5>TECH </h5><h5 class="colorBlue">NEWS</h5></a>
+        <ul class="Nav-menu">
+            <li><a href="index.html">Inico</a></li>
+            <li><a href="login.html">Inicio Sesion</a></li>
+            <li><a class="colorBlue" href="register.html">Registrarse</a></li>
+            <li><a href="#">Mas</a></li>
+        </ul>        
+    </nav>
+    <hr>
+</div>
+
+  <div  class="containerRegister">
+    <div class="register">
+      <form name="formRegister" >
+        <h1>REGISTRATE</h1>
+        <!--  NOMBRE DEL USUARIO  -->
+        <div class="grup">
+          <input  id="inputRegisterNameUsuario" required type="text">
+          <label for="nombreUsuario">Nombre Usuario</label>
+          <i class="fa-solid fa-circle-check icon1" id="mostrarTrueIcon1"></i>
+          <i id="mostrarbadIcon1" class="fa-solid fa-circle-xmark badIcon1"></i>
+
+          <div id="messageCharacter"></div>
+          <p onkeyup="contadorCaracter();" id="NumCaracteres"></p>
+        </div>
+
+        <!--  CONTRASEÑA DEL USUARIO  -->
+        <div class="grup">
+          
+          <input id="Password" required type="password">
+          <i class="fa-solid fa-circle-check icon2" id="mostrarTrueIcon2"></i><i id="mostrarbadIcon2" class="fa-solid fa-circle-xmark badIcon2"></i>
+          <label for="password">Contraseña </label>
+        </div>
+
+        <!--  CONTRASEÑA DEL USUARIO  -->
+        <div class="grup">
+          <i class="fa-solid fa-circle-check icon3 " id="mostrarTrueIcon3" ></i><i id="mostrarbadIcon3"  class="fa-solid fa-circle-xmark badIcon3"></i>
+          <input id="PasswordConfirm" required type="password">
+          <label for="password">Confirmar Contraseña </label>
+        </div>
+
+
+        <button id="buttonRegister" class="button">Iniciar sesión</button>
+        <div class= "ContenedoresDePregunta">
+          <a href="#"> ¿A olvidado Su contraseña? </a>
+          <a href="login.html"> ¿Ya tienes una una Cuenta? </a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/0d35893116.js" crossorigin="anonymous"></script>
+  <script src="js/scrollReveal.js" ></script>
+  <script src="js/scrollreveal.js" ></script>
+  <script src="js/animacion.js" ></script>
+</body>
+</html>
