@@ -110,7 +110,6 @@ inputLoginNameUsuario.addEventListener('keyup', userValidation )
 let arrayUserName = {};
 let arrayPassword = {};
 
-
 function saveData(eventData) {
 
 }
